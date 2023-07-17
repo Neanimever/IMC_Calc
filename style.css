@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin-top: 2rem;
+    background-color: #cac7c7;
+}
+
+main {
+    width: 45%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 3px 5px 5px 2px #1905ce;
+}
+
+h1 {
+    margin-top: 10rem;
+}
+
+.input {
+    margin-top: 5rem;
+}
+
+label {
+    font-size: 1.7rem;
+}
+
+#nome, #altura, #peso {
+    border: 1px solid #1905ce;
+    border-radius: 5px;
+    padding: 1rem;
+    height: 2.5rem;
+    background-color: #c5bcd1;
+}
+
+#nome {
+    width: 30rem;
+}
+
+.box {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.valor {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    width: 12rem;
+    height: 4rem;
+    margin-top: 7rem;
+    font-size: 1.8rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px #1905ce;
+    cursor: pointer;
+    transition: .5s;
+}
+
+button:hover {
+    background-color: #000;
+    color: #1905ce;
+}
+
+.erro {
+    color: #464444;
+    margin-top: 5rem;
+}
+
+span {
+    font-size: 2.5rem;
+    color: #464444;
+}
+
+@media screen and (max-width: 1024px) {
+    main {
+        width: 75%;
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width: 688px) {
+    main {
+        width: 95%;
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    main {
+        width: 90%;
+        height: 65vh;
+    }
+
+    #nome {
+        width: 15rem;
+    }
+
+    #altura, #peso {
+        width: 8rem;
+    }
+
+    span {
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    main {
+        height: 75vh;
+    }
+
+    span {
+        font-size: 1.4rem;
+    }
+}
